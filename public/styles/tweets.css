@@ -1,0 +1,53 @@
+#tweet {
+  border: 4px solid #545149;
+  padding: 1em;
+}
+
+#tweet:hover {
+  box-shadow: 5px 5px lightgrey;
+}
+
+.handle {
+  visibility: hidden;
+}
+
+#tweet:hover .handle {
+  visibility: visible;
+  color: lightgrey;
+  float: right;
+}
+
+.content {
+  padding: 1.5em;
+  padding-left: 1em;
+  border-bottom: 4px solid #545149;
+}
+
+#tweet footer {
+  padding-top: 1em;
+  padding-left: 1em;
+  font-size: 18px;
+}
+
+#time {
+  font-size: 12px;
+  opacity: 70%;
+}
+
+.actions {
+  float: right;
+  width: 100px;
+  display: flex;
+}
+
+
+.actions i{
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.actions i:hover {
+  color: gold;
+}
+

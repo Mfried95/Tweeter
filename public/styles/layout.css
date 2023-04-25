@@ -20,8 +20,8 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-family: 'Bungee', sans-serif;
   font-size: 24px;
+  font-family: sans-serif;
   background-image: url('../images/black-linen.png');
 }
 
@@ -33,4 +33,18 @@ main{
   width: 90%;
   margin: 0 auto;
   background-color: #f4f1ec;
+}
+
+main h2 {
+  font-family: 'Bungee'
+}
+
+.tweets-container{
+  width: 100%;
+}
+
+article{
+  font-family: sans-serif;
+  border: solid #545149 5px;
+  height: 200px;
 }
