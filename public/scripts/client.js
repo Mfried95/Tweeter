@@ -23,22 +23,24 @@ $(document).ready(() => {
   const createTweetElement = function(tweet) {
     const $article = $(`<article>`).addClass("tweet-container");
     const $tweetData = $(`
+    <section>
+    <article id="tweet">
       <header>
-        <img src="${tweet.user.avatars}" />
-        <h3>${tweet.user.name}</h3>
+      <img src="${tweet.user.avatars}" />
+        ${tweet.user.name}
         <span>${tweet.user.handle}</span>
       </header>
-      <div class="tweet-content">
-        <p>${tweet.content.text}</p>
-      </div>
+      <p>${tweet.content.text}</p>
       <footer>
-        <span class="current-time">${getCurrentDateTime()}</span>
+      <span class="current-time">${getCurrentDateTime()}</span>
         <div class="actions">
-          <i class="fas fa-flag"></i>
-          <i class="fas fa-retweet"></i>
-          <i class="fas fa-heart"></i>
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-heart"></i>
         </div>
       </footer>
+    </article>
+  </section>
   `);
     const checking = $article.append($tweetData);
 

@@ -4,8 +4,6 @@
  * Do not modify these two selectors, please
  */
 
-
- 
 html {
   box-sizing: border-box;
 }
@@ -16,6 +14,7 @@ html {
 /*
  * Global layout stuff
  */
+ 
 
 body {
   color: #545149;
@@ -39,12 +38,23 @@ main h2 {
   font-family: 'Bungee'
 }
 
-.tweets-container{
+.tweets-section{
   width: 100%;
 }
 
 article{
   font-family: sans-serif;
-  border: solid #545149 5px;
   height: 200px;
 }
+
+
+.tweets-section{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+
+
+
+

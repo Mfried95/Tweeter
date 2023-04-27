@@ -22,3 +22,22 @@ i{
   display: flex;
   flex-direction: column;
 }
+
+
+@media only screen and (max-width: 768px) {
+  nav{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 150px;
+  }
+
+  nav span{
+    text-align: center;
+  }
+
+  .new-tweet{
+    text-align: center;
+  }
+
+}
