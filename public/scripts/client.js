@@ -23,7 +23,7 @@ $(document).ready(() => {
   const createTweetElement = function(tweet) {
     const $article = $(`<article>`).addClass("tweet-container");
     const $tweetData = $(`
-    <section>
+    <section class="new-tweets-section">
     <article id="tweet">
       <header class="new-header">
       <img src="${tweet.user.avatars}" class="avatar" />

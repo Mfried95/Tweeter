@@ -3,17 +3,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 400px;
+  height: 500px;
   width: 100%;
   margin-top: 150px;
   font-family: "Bungee";
 }
 
 
+
+
 @media only screen and (max-width: 600px) {
   .main-header {
     width: 100%;
     margin: 0;
+    height: 600px;
     display: flex;
     flex-direction: column;
     position: relative;

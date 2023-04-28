@@ -27,6 +27,7 @@
   padding-top: 1em;
   padding-left: 1em;
   font-size: 18px;
+  margin-top: 1em;
 }
 
 #time {
@@ -53,6 +54,23 @@
 
 header{
   display: flex;
+  align-items: center;
+  display: flex;
+}
+
+header span{
+  display: flex;
+}
+
+.new-tweets-section{
+  display: flex;
+  flex-direction: column;
+}
+
+article #tweet{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
 }
 
 @media only screen and (max-width: 768px) {

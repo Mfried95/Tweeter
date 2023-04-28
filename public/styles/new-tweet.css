@@ -40,7 +40,7 @@ button{
 @media only screen and (max-width: 768px){
   .new-tweet{
     margin-top: 50px;
-    position: relative;
+    gap: 1em;
   }
 
   
