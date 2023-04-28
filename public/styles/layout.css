@@ -22,6 +22,7 @@ body {
   font-size: 24px;
   font-family: sans-serif;
   background-image: url('../images/black-linen.png');
+  display: flex;
 }
 
 /*
@@ -44,7 +45,7 @@ main h2 {
 
 article{
   font-family: sans-serif;
-  height: 200px;
+  
 }
 
 
@@ -54,7 +55,15 @@ article{
   gap: 2em;
 }
 
+.contianer{
+  padding-top: 10em;
+}
 
-
+@media only screen and (max-width: 768px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 

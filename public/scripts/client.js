@@ -25,8 +25,8 @@ $(document).ready(() => {
     const $tweetData = $(`
     <section>
     <article id="tweet">
-      <header>
-      <img src="${tweet.user.avatars}" />
+      <header class="new-header">
+      <img src="${tweet.user.avatars}" class="avatar" />
         ${tweet.user.name}
         <span>${tweet.user.handle}</span>
       </header>

@@ -18,17 +18,18 @@ i{
 }
 
 .new-tweet{
-  font-size: 18px;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
 }
 
 
 @media only screen and (max-width: 768px) {
+  
   nav{
     display: flex;
     flex-direction: column;
-    margin: auto;
+    padding: 0;
     height: 150px;
   }
 
@@ -38,6 +39,8 @@ i{
 
   .new-tweet{
     text-align: center;
+    padding: 0;
+    margin: 0;
   }
 
 }
