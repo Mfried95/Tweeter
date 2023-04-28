@@ -73,12 +73,12 @@ $(document).ready(() => {
         url: "/tweets",
         method: "POST",
         data: formData,
-        success: () => {
+        success: function() {
           // clear the form input and reload the tweets
           $(event.target).find("textarea").val("");
           loadtweets();
         },
-        error: (error) => {
+        function(error) {
           console.log(error);
         },
       });
@@ -94,10 +94,10 @@ $(document).ready(() => {
     $.ajax({
       url: "/tweets",
       method: "GET",
-      success: (tweets) => {
+      success: function(tweets) {
         renderTweets(tweets);
       },
-      error: (error) => {
+      error: function(error) {
         console.log(error);
       },
     });
