@@ -7,8 +7,7 @@
 // Test / driver code (temporary). Eventually will get this from the server.
 
 $(document).ready(() => {
-
-  const createTweetElement = function(tweet) {
+  const createTweetElement = function (tweet) {
     const $article = $("<article>").addClass("tweet-container");
     const $tweetData = $(`
       <section class="new-tweets-section">
@@ -30,9 +29,9 @@ $(document).ready(() => {
         </article>
       </section>
     `);
-  
+
     $article.append($tweetData);
-  
+
     return $article;
   };
 
