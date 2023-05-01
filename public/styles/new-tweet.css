@@ -5,6 +5,13 @@ form {
   gap: 1em;
 }
 
+.new-tweets-section p{
+  word-wrap: break-word;
+  width: 100%;
+  height: 100%;
+}
+
+
 .new-tweet{
   padding: 1em;
   gap: 1em;
