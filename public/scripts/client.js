@@ -98,8 +98,6 @@ $(document).ready(() => {
     });
   };
 
-  // const $tweets = createTweetElement(tweetData);
-  // $(".tweets-section").append($tweets);
   loadtweets();
   $("form").submit(addPost);
 });
