@@ -7,6 +7,13 @@
 // Test / driver code (temporary). Eventually will get this from the server.
 
 $(document).ready(() => {
+
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function (tweet) {
     const $article = $("<article>").addClass("tweet-container");
     const $tweetData = $(`
@@ -17,7 +24,7 @@ $(document).ready(() => {
             ${tweet.user.name}
             <span>${tweet.user.handle}</span>
           </header>
-          <p>${tweet.content.text}</p>
+          <p>${escape(tweet.content.text)}</p>
           <footer>
             <span class="time-ago">${timeago.format(tweet.created_at)}</span>
             <div class="actions">
