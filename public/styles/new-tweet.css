@@ -44,11 +44,11 @@ button{
 }
 
 
-@media only screen and (max-width: 768px){
+/* @media only screen and (max-width: 768px){
   .new-tweet{
     margin-top: 50px;
     gap: 1em;
-  }
+  } */
 
   
 

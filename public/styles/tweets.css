@@ -81,7 +81,7 @@ article #tweet{
   margin-top: 1em;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
 
   .avatar{
     width: 50px;
@@ -97,6 +97,6 @@ article #tweet{
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+  } */
 
-}
+

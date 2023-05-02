@@ -3,32 +3,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 500px;
-  width: 100%;
-  margin-top: 150px;
+  height: 400px;
+  width: 50%;
+  margin-top: 125px;
+  margin-right: 2rem;
+  background-color: orange;
   font-family: "Bungee";
 }
 
 
-
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .main-header {
     width: 100%;
-    margin: 0;
+    margin: 0px;
     height: 600px;
     display: flex;
     flex-direction: column;
     position: relative;
   }
 
+body{
+  margin: 0;
+}
+
   .main-header img {
     margin-top: 150px;
   }
 
   nav {
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    background-color: orange;
   }
 }

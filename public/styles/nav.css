@@ -23,8 +23,7 @@ i{
   flex-direction: column;
 }
 
-
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   
   nav{
     display: flex;
@@ -43,4 +42,4 @@ i{
     margin: 0;
   }
 
-}
+} */
