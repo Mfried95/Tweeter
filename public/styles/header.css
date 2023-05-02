@@ -11,7 +11,6 @@
   font-family: "Bungee";
 }
 
-
 @media only screen and (max-width: 1024px) {
   .main-header {
     width: 100%;
@@ -22,9 +21,9 @@
     position: relative;
   }
 
-body{
-  margin: 0;
-}
+  body {
+    margin: 0;
+  }
 
   .main-header img {
     margin-top: 150px;

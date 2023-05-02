@@ -7,27 +7,28 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 /*
  * Global layout stuff
  */
- 
 
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: sans-serif;
-  background-image: url('../images/black-linen.png');
+  background-image: url("../images/black-linen.png");
   display: flex;
   margin: 5%;
   position: relative;
 }
 
-.container{
+.container {
   margin-top: 10%;
 }
 
@@ -35,36 +36,31 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-main{
+main {
   width: 90%;
   margin: 0 auto;
   background-color: #f4f1ec;
 }
 
 main h2 {
-  font-family: 'Bungee'
+  font-family: "Bungee";
 }
 
-.tweets-section{
+.tweets-section {
   width: 100%;
 }
 
-article{
+article {
   font-family: sans-serif;
-  
 }
 
-
-.contianer{
+.contianer {
   margin-top: 12.5rem;
 }
 
 @media only screen and (max-width: 1024px) {
-  body{
+  body {
     display: flex;
     flex-direction: column;
   }
-
 }
-
-

@@ -45,8 +45,7 @@ p {
   display: flex;
 }
 
-
-.actions i{
+.actions i {
   width: 12px;
   height: 12px;
   cursor: pointer;
@@ -56,47 +55,26 @@ p {
   color: gold;
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   display: flex;
 }
 
-header span{
+header span {
   display: flex;
 }
 
-.new-tweets-section{
+.new-tweets-section {
   display: flex;
   flex-direction: column;
 }
 
 p {
-  
 }
 
-article #tweet{
+article #tweet {
   display: flex;
   flex-direction: column;
   margin-top: 1em;
 }
-
-/* @media only screen and (max-width: 768px) {
-
-  .avatar{
-    width: 50px;
-  }
-
-  .new-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #tweet{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
-
-
