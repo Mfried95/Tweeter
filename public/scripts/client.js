@@ -14,6 +14,7 @@ $(document).ready(() => {
     return div.innerHTML;
   };
 
+
   const createTweetElement = function (tweet) {
     const $article = $("<article>").addClass("tweet-container");
     const $tweetData = $(`
@@ -44,6 +45,7 @@ $(document).ready(() => {
 
   const renderTweets = function (tweets) {
     // clear existing tweets from the DOM
+    $(".tweets-section").empty();
 
     // loop through each tweet
     for (const tweet of tweets) {
@@ -69,11 +71,13 @@ $(document).ready(() => {
         data: formData,
         success: function () {
           // clear the form input and reload the tweets
+          $error.empty();
           $(event.target).find("textarea").val(""); // clear the textarea
           $(event.target).find(".counter").text("140"); // reset the character counter to 140
           loadtweets();
         },
         function() {
+
           $error.text("There is an error");
         },
       });
