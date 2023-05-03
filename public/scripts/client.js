@@ -56,37 +56,30 @@ $(document).ready(() => {
     event.preventDefault(); // prevent the default submit
     const tweetLength = $("#tweet-text").val().length;
     const $error = $("#error-message").css("color", "red");
-
-    // check the length of the tweet content
+  
     if (tweetLength <= 140) {
-      // serialize the form data
+      if (tweetLength === 0) {
+        $error.text("Error: tweet cannot be empty!");
+        $error.removeClass("hidden");
+        return;
+      }
       const formData = $(event.target).serialize();
-
-      // AJAX request
       $.ajax({
         url: "/tweets",
         method: "POST",
         data: formData,
         success: function () {
-          // clear the form input and reload the tweets
           $error.empty();
-          $(event.target).find("textarea").val(""); // clear the textarea
-          $(event.target).find(".counter").text("140"); // reset the character counter to 140
+          $(event.target).find("textarea").val("");
+          $(event.target).find(".counter").text("140");
           loadtweets();
         },
-        function() {
+        error: function () {
           $error.text("There is an error");
         },
       });
-    } else if (tweetLength === 0) {
-      // display an error message for empty tweet
-      $error.text("Error: tweet cannot be empty!");
-      $error.color("red");
-      $error.removeClass("hidden");
-      return;
     } else {
       $error.text("Error: tweet is too long!");
-      $error.color("red");
       $error.removeClass("hidden");
       return;
     }
